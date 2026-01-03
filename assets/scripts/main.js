@@ -31,12 +31,12 @@
 
   const RESUME_LINKS = {
     ja: {
-      tech: "./assets/resumes/JP/Tai_Tran_Software_Engineer_Resume_JP.pdf",
-      nonTech: "./assets/resumes/JP/Tai_Tran_Non_Technical_Resume_JP.pdf",
+      tech: "./assets/resumes/JP/Caleb_Worth_Software_Engineer_Resume_JP.pdf",
+      nonTech: "./assets/resumes/JP/Caleb_Worth_Non_Technical_Resume_JP.pdf",
     },
     en: {
-      tech: "./assets/resumes/EN/Tai_Tran_Software_Engineer_Resume.pdf",
-      nonTech: "./assets/resumes/EN/Tai_Tran_Non_Technical_Resume.pdf",
+      tech: "./assets/resumes/EN/Caleb_Worth_Software_Engineer_Resume.pdf",
+      nonTech: "./assets/resumes/EN/Caleb_Worth_Non_Technical_Resume.pdf",
     },
   };
 
