@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja" translate="no" class="notranslate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer | Caleb</title>
+    <meta name="description" content="A static page with falling sakura petals." />
+    <meta name="google" content="notranslate" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png" />
+    <link rel="icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <canvas id="petals-canvas" aria-hidden="true"></canvas>
+    <button class="btn btn-secondary lang-toggle" type="button" id="lang-toggle" aria-label="Switch to English">
+      <span class="btn-label">EN</span>
+    </button>
+
+    <main class="content">
+      <div class="hero">
+        <h1 class="name" lang="ja" data-i18n="name">ケイレブ・ワース</h1>
+    <h2 class="role" data-i18n="role">ソフトウェアエンジニア</h2>
+        <div class="cta" aria-label="Primary actions">
+          <a
+            class="btn"
+            data-resume="tech"
+            href="./assets/resumes/JP/Tai_Tran_Software_Engineer_Resume_JP.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="btn-icon btn-icon--resume" aria-hidden="true"></span>
+            <span class="btn-label" data-i18n="techResume">技術レジュメ</span>
+          </a>
+          <a
+            class="btn btn-secondary"
+            data-resume="nontech"
+            href="./assets/resumes/JP/Tai_Tran_Non_Technical_Resume_JP.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="btn-icon btn-icon--resume" aria-hidden="true"></span>
+            <span class="btn-label" data-i18n="nonTechResume">非技術レジュメ</span>
+          </a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/taitranz/" target="_blank" rel="noreferrer">
+            <span class="btn-icon btn-icon--linkedin" aria-hidden="true"></span>
+            <span class="btn-label" data-i18n="linkedin">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/scripts/petal-animation.js" defer></script>
+    <script src="./assets/scripts/main.js" defer></script>
+  </body>
+</html>
