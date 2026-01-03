@@ -41,7 +41,7 @@
     // Global fall speed multiplier.
     fallSpeed: 1.0,
     // Slight blur for softness.
-    blurPx: 0.9,
+    blurPx: 0.7,
   };
 
   // Adaptive quality to keep animation smooth on weaker CPUs.
@@ -61,24 +61,24 @@
 
   const palette = {
     fillA: [
-      [255, 238, 244],
-      [255, 232, 240],
-      [255, 225, 235],
+      [255, 230, 240],
+      [255, 220, 235],
+      [255, 205, 225],
     ],
     fillB: [
       [255, 255, 255],
-      [255, 250, 252],
+      [255, 245, 250],
     ],
     target: {
-      fillA: [246, 178, 202],
-      fillB: [255, 236, 244],
-      outline: [232, 115, 154],
-      vein: [224, 100, 145],
-      microVein: [238, 135, 170],
+      fillA: [245, 165, 195],
+      fillB: [255, 225, 238],
+      outline: [230, 105, 145],
+      vein: [220, 90, 135],
+      microVein: [235, 125, 160],
     },
-    outlineBase: [255, 195, 214],
-    veinBase: [255, 185, 208],
-    microVeinBase: [255, 205, 220],
+    outlineBase: [255, 185, 208],
+    veinBase: [255, 175, 200],
+    microVeinBase: [255, 195, 214],
   };
 
   /**
@@ -160,9 +160,9 @@
 
   function getPetalAlpha(seed) {
     const boost = clamp(state.visibilityBoost, 0, 1);
-    const min = lerp(0.34, 0.48, boost);
-    const max = lerp(0.64, 0.84, boost);
-    return clamp(lerp(min, max, seed), 0.28, 0.9);
+    const min = lerp(0.48, 0.62, boost);
+    const max = lerp(0.78, 0.92, boost);
+    return clamp(lerp(min, max, seed), 0.42, 0.95);
   }
 
   function getPetalColors(baseA, baseB) {
